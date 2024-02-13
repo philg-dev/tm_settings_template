@@ -1,0 +1,46 @@
+    /* styles for script related elements */
+    .tm-icon {
+        stroke: magenta;
+        position:absolute;
+        top: 100px;
+        left: 20px;
+        cursor:pointer;
+    }
+    
+    #tmSettingsPopup,
+    #tmSettingsContent,
+    #tmSettingsPopup input,
+    #tmSettingsPopup button {
+        color: black;
+    }
+
+
+    #tmSettingsContent {
+        background: white;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 5px;
+        border-color: black;
+        padding: 20px;
+        z-index: 99999;
+    }
+    
+    #tmSettingsPopup {
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, .25);
+        z-index: 99990;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+    }
+
+    #tmSettingsPopup:not(.show) {
+        display:none;
+    }
+
+    .show {
+        display: flex;
+    }
