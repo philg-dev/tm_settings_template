@@ -1,3 +1,4 @@
+@-moz-document domain("google.com") {
     /* styles for script related elements */
     .tm-icon {
         stroke: magenta;
@@ -44,3 +45,4 @@
     .show {
         display: flex;
     }
+}
