@@ -7,8 +7,13 @@ It also comes with a very basic GUI to change and save those settings. The setti
 
 ## Usage
 
-In order to properly use the example project, you will need the browser extensions Stylus and Tampermonkey.
+In order to properly use the example project, you will need either the Tampermonkey or the Greasemonkey browser extension.
+If you want to have the CSS separate from the Javascript, you might also want the Stylus browser extension.
 
+- `./src/settings_template_standalone.user.js`
+  - can be used with Tampermonkey and contains everything you need
+  - when using this file, you don't need any of the other files
+  - for more details what the files do read below
 - `./src/settings_template.user.css`
   - can be imported in the Stylus extension
   - includes basic styles for a modular settings dialog and a fixed position for the cog wheel icon
