@@ -201,17 +201,12 @@
             `
         ));
 
-        console.log(id_settingsIcon)
         document.getElementById(id_settingsIcon).addEventListener("click", toggleSettingsUi);
-        console.log(id_saveButton)
         document.getElementById(id_saveButton).addEventListener("click", saveSettings);
-        console.log(id_cancelButton)
         document.getElementById(id_cancelButton).addEventListener("click", toggleSettingsUi);
         // hide popup when clicking the background outside of main settings div
-        console.log(id_settingsPopup)
         document.getElementById(id_settingsPopup).addEventListener("click", toggleSettingsUi);
         // prevent child elements from bubbling the click event up to the parent (i.e. when clicking anything that's actually inside the settings panel)
-        console.log(id_settingsContent)
         document.getElementById(id_settingsContent).addEventListener("click", (event) => {
             event.stopPropagation();
         });
