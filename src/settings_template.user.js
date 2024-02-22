@@ -83,13 +83,6 @@
             }
         }
         console.debug("Loaded settings from local storage: " + JSON.stringify(settings));
-        /*
-        var savedSampleSelectElementValue = await GM.getValue("role", roleDefaults.germanDev.id);
-        var savedSampleCheckbox1Value = !!(await GM.getValue("hideNavigation", true));
-        var savedSampleCheckbox2Value = !!(await GM.getValue("trimDIVERSVSO", true));
-        var savedSampleTextfieldValue = 
-        */
-        postLoad();
     };
 
     /**
@@ -146,10 +139,6 @@
         // based on whether the input HTML had one or more roots.
         if (result.length === 1) return result[0];
         return result;
-    };
-
-    // TODO delete?
-    const postLoad = function () {
     };
 
     const toggleSettingsUi = function () {
